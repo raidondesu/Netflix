@@ -4,7 +4,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h1>Testing</h1>
+      <Row title = "Netflix Originals"/>
+      <Row title = "Trending Now"/>
+      <Row title = "Top Rated"/>
+      <Row title = "Action Movies"/>
+      <Row title = "Comedy Movies"/>
+      <Row title = "Romance Movies"/>
     </div>
   );
 }
