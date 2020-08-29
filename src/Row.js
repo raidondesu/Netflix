@@ -18,11 +18,16 @@ function Row({ title, fetchUrl }) {
         }
         fetchData();
     }, [fetchUrl]);
+
+    console.log([movies]);
     return (
-        <div>
+        <div classNmae = "row">
             <h2>{title}</h2>
 
-            {/* Container -> Posters */}
+            <div className="movie_posters">
+                {/* posters */}
+            </div>
+
         </div>
     )
 }
