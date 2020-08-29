@@ -17,7 +17,7 @@ function Row({ title, fetchUrl }) {
             return request;
         }
         fetchData();
-    }, []);
+    }, [fetchUrl]);
     return (
         <div>
             <h2>{title}</h2>
