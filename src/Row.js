@@ -10,6 +10,9 @@ function Row({ title, fetchUrl }) {
         async function fetchData() {
             const request = await axios.get(fetchUrl);
             //BaseURL + Row URL + APIKEY
+            console.log(request.data.results);
+            // request.data.results is the array that contains the movies for each row
+            setMovies(request.data.resuts);
             console.log(request);
             return request;
         }
