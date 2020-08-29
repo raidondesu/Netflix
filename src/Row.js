@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from './axios';
 
-function Row({ title }) {
+function Row({ title, fetchUrl }) {
     const [movies, setMovies] = useState([]);
 
     //When the row loads, make a requests to the database
@@ -10,12 +10,14 @@ function Row({ title }) {
         async function fetchData() {
             const request = await axios.get(fetchUrl);
             //BaseURL + Row URL + APIKEY
+            console.log(request);
+            return request;
         }
         fetchData();
     }, []);
     return (
         <div>
-            <h2>(title)</h2>
+            <h2>{title}</h2>
 
             {/* Container -> Posters */}
         </div>
