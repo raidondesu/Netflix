@@ -20,10 +20,20 @@ function Banner() {
 
   console.table(movie);
   return (
-    <header>
-      {/* title */}
-      {/* div 2 buttons */}
-      {/* description */}
+    <header
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"`,
+        backgroundPosition: "center center",
+      }}
+    >
+      <div className="banner_contents">
+        {/* title */}
+        <h1></h1>
+        {/* div 2 buttons */}
+        {/* description */}
+      </div>
     </header>
   );
 }
