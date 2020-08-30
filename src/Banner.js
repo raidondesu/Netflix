@@ -13,9 +13,12 @@ function Banner() {
           Math.floor(Math.random() * request.data.results.length)
         ]
       );
+      return request;
     }
     fetchData();
   }, []);
+
+  console.table(movie);
   return (
     <header>
       {/* title */}
