@@ -6,7 +6,6 @@
   padding: 20px;
   height: 70px;
   justify-content: space-between;
-  background-color: #111;
   z-index: 1;
 }
 
@@ -15,4 +14,8 @@
   left: 20px;
   width: 80px;
   object-fit: contain;
+}
+
+.nav_black {
+  background-color: #111;
 }
