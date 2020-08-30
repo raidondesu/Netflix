@@ -13,7 +13,7 @@ function Nav() {
     };
   }, []);
   return (
-    <div className="nav">
+    <div className={`nav ${show && "nav_black"}`}>
       <img
         className="nav_logo"
         src="https://cdn.iconscout.com/icon/free/png-128/netflix-282224.png"
