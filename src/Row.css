@@ -21,3 +21,7 @@
   transform: scale(1.08);
   opacity: 1;
 }
+
+.row_posterLarge {
+  max-height: 250px;
+}
