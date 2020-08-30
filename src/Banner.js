@@ -1,7 +1,14 @@
 import React from "react";
 
 function Banner() {
-  return <div></div>;
+  const [movie, setmovie] = useState([]);
+  return (
+    <header>
+      {/* title */}
+      {/* div 2 buttons */}
+      {/* description */}
+    </header>
+  );
 }
 
 export default Banner;
