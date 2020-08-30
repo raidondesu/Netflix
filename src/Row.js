@@ -3,7 +3,7 @@ import axios from "./axios";
 import "./Row.css";
 const poster_url = "https://image.tmdb.org/t/p/original";
 
-function Row({ title, fetchUrl }) {
+function Row({ title, fetchUrl, isLargeRow }) {
   const [movies, setMovies] = useState([]);
 
   //When the row loads, make a requests to the database
@@ -28,7 +28,9 @@ function Row({ title, fetchUrl }) {
           <img
             key={movie.id}
             className="row_poster"
-            src={`${poster_url}${movie.poster_path}`}
+            src={`${poster_url}${
+              isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
             alt={movie.name}
           />
         ))}
